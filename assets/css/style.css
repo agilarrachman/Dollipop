@@ -67,11 +67,11 @@ body {
     --e-global-color-light-grayish-violet: #cfb6e2;
     --e-global-color-dark-moderate-violet: #3f6dc4;
     --e-global-color-light-blue: #9ceef9;
-    --e-global-color-gradient-1: #efd7ef;
+    --e-global-color-gradient-1: #ffa4de;
     --e-global-color-gradient-2: #f5f9fc;
-    --e-global-color-gradient-3: #f8eae1;
-    --e-global-color-gradient-4: #eaf8f9;
-    --e-global-color-star-yellow: #fbab2a;
+    --e-global-color-gradient-3: #eaf8f9;
+    --e-global-color-gradient-4: #9ceef9;
+    --e-global-color-star-yellow: #64615c;
     --e-global-color-light-yellow: #ffc045;
     --e-global-color-very-light-grayish-violet: #f6f3f9;
     --e-global-color-border: 1px solid #e5e5e5;
@@ -2733,9 +2733,10 @@ html{
     padding: 23px 42px;
 }
 .journey-con .journey_wrapper .journey-image {
-    position: absolute;
+    position: center;
     left: -146px;
     top: -35px;
+
 }
 .journey-con .journey_wrapper .journey-image img {
     border-radius: 100%;
@@ -2874,6 +2875,7 @@ html{
     position: relative;
     text-align: center;
     transition: all 0.3s ease-in-out;
+    margin-bottom: 10px;
 }
 .team-con .team-box figure { 
     width: 314px;
