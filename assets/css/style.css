@@ -60,6 +60,7 @@ body {
     --e-global-color-primary: #ffffff;
     --e-global-color-secondary: #0f0200;
     --e-global-color-accent: #ff4db3;
+    --e-global-color-darker-pink: #c3237e;
     --e-global-color-text: #646464;
 	--e-global-color-white: #ffffff;
     --e-global-color-black: #000000;
@@ -173,11 +174,20 @@ html{
 
 .header {
     padding: 22px 0px;
-    position: relative;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    position: fixed;
+    width: 100%;
     z-index: 5;
 }
+
+.header.scrolled {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .header .logo img {
-    width: 185px;
+    width: 140px;
 }
 .navbar-collapse .navbar-nav{
     text-align: center;
@@ -359,7 +369,7 @@ html{
 }
 .header .last_list .contact_us:hover{
     color: var(--e-global-color-white) !important;
-    background-color: var(--e-global-color-dark-moderate-violet);
+    background-color: var(--e-global-color-darker-pink);
     box-shadow: 0px 3px 22px 3px rgb(104 50 146 / 31%);
 }
 .header .last_list .contact_us:hover i{
@@ -391,6 +401,7 @@ html{
     background-image: url(../images/banner-backgroundbottomimage.png);
 }
 .banner-con {
+    padding-top: 100px;
     z-index: 1;
 }
 .banner-con .banner-lefttopimage {
@@ -1455,7 +1466,7 @@ html{
     color: var(--e-global-color-accent);
 }
 .footer-con .middle_portion .info {
-    padding-left: 56px;
+    padding-left: 0px;
 }
 .footer-con .middle_portion .info li {
     display: flex;
@@ -2655,7 +2666,7 @@ html{
     font-size: 80px;
     line-height: 80px;
     margin-bottom: 35px;
-    color: var(--e-global-color-secondary);
+    color: var(--e-global-color-dark-moderate-violet);
 }
 .sub_banner .sub_banner_content .box {
     padding: 14px 35px;
