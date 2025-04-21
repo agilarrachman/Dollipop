@@ -89,7 +89,7 @@ h2{
     font-size: 60px;
     line-height: 64px;
     font-weight: 400;
-    color: var(--e-global-color-secondary);
+    color: var(--e-global-color-dark-moderate-violet);
     font-family: "Berkshire Swash", serif;
 }
 h3{
@@ -155,7 +155,7 @@ p{
 }
 .all_button:hover{
     color: var(--e-global-color-white);
-    background: var(--e-global-color-secondary);
+    background: var(--e-global-color-darker-pink);
 }
 .all_button i {
     font-size: 12px;
@@ -401,8 +401,12 @@ html{
     background-image: url(../images/banner-backgroundbottomimage.png);
 }
 .banner-con {
-    padding-top: 100px;
+    padding-top: 80px;
     z-index: 1;
+}
+.banner-con .tagline{
+    color: var(--e-global-color-accent);
+    font-weight: 700;
 }
 .banner-con .banner-lefttopimage {
     position: absolute;
@@ -420,6 +424,7 @@ html{
     padding-left: 76px;
     margin-bottom: 14px;
     position: relative;
+    color: var(--e-global-color-dark-moderate-violet);
 }
 .banner-con .banner_content h3::before {
     content: "";
@@ -430,10 +435,11 @@ html{
     width: 64px;
     height: 3px;
     position: absolute;
-    background-color: var(--e-global-color-dark-moderate-violet);
+    background-color: var(--e-global-color-accent);
 }
 .banner-con .banner_content h1{
     margin-bottom: 24px;
+    color: var(--e-global-color-dark-moderate-violet);
 }
 .banner-con .banner_content h1 span{
     color: var(--e-global-color-accent);
@@ -447,11 +453,11 @@ html{
 }
 .banner-con .banner_content .all_button {
     padding: 23px 37px;
-    background-color: var(--e-global-color-dark-moderate-violet);
+    background-color: var(--e-global-color-accent);
     box-shadow: 0px 3px 22px 3px rgb(104 50 146 / 31%);
 }
 .banner-con .banner_content .all_button:hover {
-    background-color: var(--e-global-color-accent);
+    background-color: var(--e-global-color-darker-pink);
     box-shadow: 0px 3px 22px 3px rgb(248 61 142 / 31%);
 }
 .banner-con .banner-image {
@@ -471,6 +477,12 @@ html{
     z-index: -1;
 }
 
+/* Aturan untuk screen ≥ 920px */
+@media (min-width: 920px) {
+  .banner-con .emoji{
+    font-size: 80px;
+  }
+}
 /* Relive */
 
 .relive-con .relive-rightbottomimage {
@@ -479,7 +491,7 @@ html{
     bottom: 0;
 }
 .relive-con .relive_content {
-    padding: 180px 0 178px 35px;
+    padding: 190px 0 178px 0px;
 }
 .relive-con .relive_content h2{
     margin-bottom: 28px;
@@ -525,7 +537,7 @@ html{
 }
 .relive-con .relive_wrapper .relive-doted {
     position: absolute;
-    right: 18px;
+    right: 0px;
     top: 150px;
 }
 
@@ -666,14 +678,14 @@ html{
     position: absolute;
     border-radius: 100%;
     color: var(--e-global-color-white);
-    background-color: var(--e-global-color-dark-moderate-violet);
+    background-color: var(--e-global-color-accent);
     transition: all 0.3s ease-in-out;
 }
 .classic-con .classic-box:hover {
     border: 1px solid var(--e-global-color-accent);
 }
 .classic-con .classic-box .price_wrapper a:hover {
-    background-color: var(--e-global-color-accent);
+    background-color: var(--e-global-color-darker-pink);
 }
 .classic-con .owl-carousel .owl-dots {
     display: block !important;
@@ -706,6 +718,7 @@ html{
 .classic-con .owl-carousel .owl-item img {
     display: inline-block;
     width: auto;
+    border-radius: 10px;
 }
 
 /* Categories */
@@ -729,7 +742,7 @@ html{
     overflow: hidden;
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
-    background-color: var(--e-global-color-black);
+    background-image: linear-gradient(320deg, var(--e-global-color-accent) 8%, var(--e-global-color-dark-moderate-violet) 87%);
 }
 .categories-con .categories-box .image img{
     transition: all 0.3s ease-in-out;
@@ -770,7 +783,7 @@ html{
 /* Special */
 
 .special-con {
-    padding: 154px 0 170px;
+    padding: 100px 0 170px;
     background-color: var(--e-global-color-dark-moderate-violet);
 }
 .special-con::before {
@@ -806,7 +819,7 @@ html{
 .special-con .special_content h2{
     font-size: 112px;
     line-height: 112px;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 .special-con .special_content p{
     font-size: 30px;
@@ -1243,7 +1256,7 @@ html{
     transition: all 0.8s ease-in-out;
 }
 .update-con .update_content button:hover {
-    background-color: var(--e-global-color-secondary);
+    background-color: var(--e-global-color-darker-pink);
 }
 .update-con .update_content button i {
     font-size: 12px;
@@ -1377,7 +1390,7 @@ html{
     overflow: hidden;
     border-radius: 22px;
     transition: all 0.3s ease-in-out;
-    background-color: var(--e-global-color-black);
+    background-image: linear-gradient(320deg, var(--e-global-color-accent) 8%, var(--e-global-color-dark-moderate-violet) 87%);
 }
 .follow-con li .image img{
     border-radius: 20px;
@@ -1406,6 +1419,13 @@ html{
 }
 .follow-con ul li:hover .icon{
     display: block;
+}
+
+.follow-con img{
+    width: 263px;
+    max-height: 326px !important;
+    object-fit: cover;
+    aspect-ratio: 4 / 5;
 }
 
 /* Footer */
@@ -1704,8 +1724,7 @@ html{
     top: 0;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(140deg, var(--e-global-color-gradient-1) 8%, var(--e-global-color-gradient-2) 43%, var(--e-global-color-gradient-3) 64%, var(--e-global-color-gradient-4) 87%);
+    background-repeat: no-repeat;    
 }
 .guilt-con .guilt-righttopimage {
     position: absolute;
@@ -2114,6 +2133,10 @@ html{
 .testimonial2-con .carousel-control-prev i:hover,
 .testimonial2-con .carousel-control-next i:hover{
     color: var(--e-global-color-accent) !important;
+}
+
+.testimonial-con .testimonial_wrapper img{
+    max-width: 90px;
 }
 
 /* Insta */
@@ -2666,7 +2689,7 @@ html{
     font-size: 80px;
     line-height: 80px;
     margin-bottom: 35px;
-    color: var(--e-global-color-dark-moderate-violet);
+    color: var(--e-global-color-accent);
 }
 .sub_banner .sub_banner_content .box {
     padding: 14px 35px;
