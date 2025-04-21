@@ -2863,7 +2863,7 @@ html{
     background-image: linear-gradient(320deg, var(--e-global-color-gradient-1) 8%, var(--e-global-color-gradient-2) 43%, var(--e-global-color-gradient-3) 64%, var(--e-global-color-gradient-4) 87%);
 }
 .team-con .team_content h2{
-    margin-bottom: 18px;
+    margin-bottom: 40px;
 }
 .team-con .team_content h2 span{
     color: var(--e-global-color-accent);
