@@ -71,7 +71,7 @@ body {
     --e-global-color-gradient-2: #f5f9fc;
     --e-global-color-gradient-3: #eaf8f9;
     --e-global-color-gradient-4: #9ceef9;
-    --e-global-color-star-yellow: #fbab2a;
+    --e-global-color-star-yellow: #64615c;
     --e-global-color-light-yellow: #ffc045;
     --e-global-color-very-light-grayish-violet: #f6f3f9;
     --e-global-color-border: 1px solid #e5e5e5;
@@ -2756,9 +2756,10 @@ html{
     padding: 23px 42px;
 }
 .journey-con .journey_wrapper .journey-image {
-    position: absolute;
+    position: center;
     left: -146px;
     top: -35px;
+
 }
 .journey-con .journey_wrapper .journey-image img {
     border-radius: 100%;
@@ -2778,7 +2779,7 @@ html{
     right: 0;
     top: 0;
     position: absolute;
-    background-image: url(../images/mission-rightbackgroundimage.png);
+    background-image: url(../images/img-cc/ar-aboutus.png);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -2885,7 +2886,7 @@ html{
     background-image: linear-gradient(320deg, var(--e-global-color-gradient-1) 8%, var(--e-global-color-gradient-2) 43%, var(--e-global-color-gradient-3) 64%, var(--e-global-color-gradient-4) 87%);
 }
 .team-con .team_content h2{
-    margin-bottom: 18px;
+    margin-bottom: 40px;
 }
 .team-con .team_content h2 span{
     color: var(--e-global-color-accent);
@@ -2897,6 +2898,7 @@ html{
     position: relative;
     text-align: center;
     transition: all 0.3s ease-in-out;
+    margin-bottom: 10px;
 }
 .team-con .team-box figure { 
     width: 314px;
