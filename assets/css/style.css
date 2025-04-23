@@ -777,7 +777,7 @@ html{
     transition: all 0.8s ease-in-out;
 }
 .categories-con .categories-box .content i:hover{
-    background-color: var(--e-global-color-secondary);
+    background-color: var(--e-global-color-darker-pink);
 }
 
 /* Special */
@@ -3819,7 +3819,7 @@ html{
     font-size: 90px;
     line-height: 92px;
     margin-bottom: 30px;
-    color: var(--e-global-color-secondary);
+    color: var(--e-global-color-accent);
 }
 .comingsoon_outer .sub_banner_content p {
     font-weight: 500;
@@ -3871,7 +3871,7 @@ html{
 }
 .comingsoon_outer .sub_banner_content button:hover {
     color: var(--e-global-color-white);
-    background: var(--e-global-color-secondary);
+    background: var(--e-global-color-darker-pink);
     border: 1px solid var(--e-global-color-secondary);
 }
 .comingsoon_outer .sub_banner_content .social-icon li {
